@@ -16,3 +16,17 @@ You will notice in this exercise that there are multiple tests (see in file `rep
 - Create a variable to hold the string you're going to return, create a loop that repeats the given number of times and add the given string to the result on each loop.
 
 - If running `jasmine repeatString.spec.js` raises `Temporarily disabled with xit` errors, make sure you have enabled the rest of the tests (see above).*/
+
+
+function repeatString(word, times) {
+  if (times < 0) return 'ERROR'
+  let string = ''
+  for (let i = 0; i < times; i++) {
+    string += word
+  }
+  return string
+}
+
+repeatString("hey", 3);
+
+

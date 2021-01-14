@@ -16,3 +16,15 @@ palindromes('racecar') // true
 palindromes('tacos') // false
 ```
 */
+
+ function palindromes(string) {
+  processedString = string.toLowerCase().replace(/[^A-Za-z]/g, "");// edgecase
+  return (
+    processedString
+      .split("")
+      .reverse()
+      .join("") == processedString
+  );
+};
+
+palindromes("racecar")
